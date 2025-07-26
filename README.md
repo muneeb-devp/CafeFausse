@@ -1,6 +1,6 @@
 # Café Fausse Restaurant
 
-![Café Fausse](https://placehold.co/800x200/262626/F39C12?text=Cafe+Fausse+Restaurant)
+![HomeSnap Screenshot](ui/public/homesnap.png)
 
 ## 📖 Overview
 
