@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: ./api
+      args:
+        PYTHON_VERSION: 3.12
+    image: acrcafefausse.azurecr.io/cafefausse-api:latest
+    ports:
+      - '8000:8000'
+    environment:
+      - DATABASE_URL=postgresql://cafe_user:cafe_password@db:5432/cafe_fausse
+      - FLASK_ENV=production
+      - FLASK_APP=wsgi.py
+      - SECRET_KEY=${SECRET_KEY:-your-secret-key-here}
+    depends_on:
+      - db
+
+  ui:
+    build:
+      context: ./ui
+      args: VITE_API_URL=http://localhost:8000
+    image: acrcafefausse.azurecr.io/cafefausse-ui:latest
+    ports:
+      - '3000:3000'
+    depends_on:
+      - api
+
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: cafe_fausse
+      POSTGRES_USER: cafe_user
+      POSTGRES_PASSWORD: cafe_password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+
+volumes:
+  postgres_data:

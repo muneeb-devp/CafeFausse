@@ -7,7 +7,7 @@ FROM python:${PYTHON_VERSION}-slim as base
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 ENV FLASK_ENV=production
-ENV FLASK_APP=app.py
+ENV FLASK_APP=wsgi.py
 
 WORKDIR /app
 
@@ -22,10 +22,9 @@ RUN adduser \
     --uid "${UID}" \
     appuser
 
-# Install dependencies with cache mount for better performance
-RUN --mount=type=cache,target=/root/.cache/pip \
-    --mount=type=bind,source=requirements.txt,target=requirements.txt \
-    python -m pip install --upgrade pip && \
+# Install dependencies 
+COPY requirements.txt .
+RUN python -m pip install --upgrade pip && \
     python -m pip install -r requirements.txt
 
 # Switch to non-root user
