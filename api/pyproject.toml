@@ -1,7 +1,7 @@
 [project]
 name = "api"
 version = "0.1.0"
-description = "Add your description here"
+description = "A flask backend api to support user registration for hotel bookings at different slots."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
