@@ -10,77 +10,88 @@ const MenuPage: React.FC = () => {
       description:
         'Fresh tomatoes, basil, olive oil, and toasted baguette slices',
       price: 8.5,
-      image: '/menu/bruschetta.jpg',
+      image:
+        'https://tse1.mm.bing.net/th/id/OIP.Pr_wAdwipfdEPzsaCuEjXwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3',
     },
     {
       category: 'Starters',
       name: 'Caesar Salad',
       description: 'Crisp romaine with homemade Caesar dressing',
       price: 9.0,
-      image: '/menu/caesar-salad.jpg',
+      image:
+        'https://tse2.mm.bing.net/th/id/OIP.cqxm6nPV6U1aiYhR5GX2vwHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3',
     },
     {
       category: 'Main Courses',
       name: 'Grilled Salmon',
       description: 'Served with lemon butter sauce and seasonal vegetables',
       price: 22.0,
-      image: '/menu/grilled-salmon.jpg',
+      image:
+        'https://tse4.mm.bing.net/th/id/OIP.p7Yk32-sJzmE5keNbDXcgwHaLH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3',
     },
     {
       category: 'Main Courses',
       name: 'Ribeye Steak',
       description: '12 oz prime cut with garlic mashed potatoes',
       price: 28.0,
-      image: '/menu/ribeye-steak.jpg',
+      image:
+        'https://tse1.explicit.bing.net/th/id/OIP.VZAZtxLpdYqLi_F7XlpHkwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3',
     },
     {
       category: 'Main Courses',
       name: 'Vegetable Risotto',
       description: 'Creamy Arborio rice with wild mushrooms',
       price: 18.0,
-      image: '/menu/vegetable-risotto.jpg',
+      image:
+        'https://tse1.mm.bing.net/th/id/OIP.ebwaOXCEVb3WmAbBe6LSgQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3',
     },
     {
       category: 'Desserts',
       name: 'Tiramisu',
       description: 'Classic Italian dessert with mascarpone',
       price: 7.5,
-      image: '/menu/tiramisu.jpg',
+      image:
+        'https://www.flavoursholidays.co.uk/wp-content/uploads/2020/07/Tiramisu-930x620.jpg',
     },
     {
       category: 'Desserts',
       name: 'Cheesecake',
       description: 'Creamy cheesecake with berry compote',
       price: 7.0,
-      image: '/menu/cheesecake.jpg',
+      image:
+        'https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/fbfe2bee-c646-4170-a145-bb5e7de8c8a1/Derivates/5527f290-3faa-4ae2-a1bc-7f9980d90251.jpg',
     },
     {
       category: 'Beverages',
       name: 'Red Wine (Glass)',
       description: 'A selection of Italian reds',
       price: 10.0,
-      image: '/menu/red-wine.jpg',
+      image:
+        'https://static.vecteezy.com/system/resources/thumbnails/043/372/801/small_2x/red-wine-in-a-black-studio-background-free-photo.jpg',
     },
     {
       category: 'Beverages',
       name: 'White Wine (Glass)',
       description: 'Crisp and refreshing',
       price: 9.0,
-      image: '/menu/white-wine.jpg',
+      image:
+        'https://tse4.mm.bing.net/th/id/OIP.SxtPDOCpKzqqWzamQZ1-lwHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3',
     },
     {
       category: 'Beverages',
       name: 'Craft Beer',
       description: 'Local artisan brews',
       price: 6.0,
-      image: '/menu/craft-beer.jpg',
+      image:
+        'https://i.pinimg.com/originals/c8/2e/3b/c82e3bcb3742cf17b7cf83533f3dbb80.jpg',
     },
     {
       category: 'Beverages',
       name: 'Espresso',
       description: 'Strong and aromatic',
       price: 3.0,
-      image: '/menu/espresso.jpg',
+      image:
+        'https://tse4.mm.bing.net/th/id/OIP.zv07lmjM8Mon4HTv1nGsFgHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3',
     },
   ]
 
